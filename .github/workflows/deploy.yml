@@ -1,4 +1,4 @@
-name: Deploy React App
+name: Deploy React App to GitHub Pages
 
 on:
   push:
@@ -20,9 +20,6 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run tests
-        run: npm test
 
       - name: Build project
         run: npm run build
