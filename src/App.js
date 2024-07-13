@@ -40,20 +40,6 @@ function App() {
     setTransactionsAmount(transactions.filter(transaction => transaction.amount >= parseInt(amount)))
   };
 
-
-
-  // const handleFilter = (customerId, amount) => {
-  //   let filtered = transactions;
-  //   if (customerId) {
-  //     filtered = filtered.filter(transaction => transaction.customer_id === parseInt(customerId));
-  //   }
-  //   if (amount) {
-  //     filtered = filtered.filter(transaction => transaction.amount >= parseInt(amount));
-  //   }
-  //   setFilteredTransactions(filtered);
-  //   // setTransactions(filtered);
-  // };
-
   const handleSelectCustomer = (customerId) => {
     setSelectedCustomer(customers.find(customer => customer.id == parseInt(customerId)));
   };
