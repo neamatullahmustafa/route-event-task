@@ -17,4 +17,4 @@ jobs:
         run: npm install -g json-server
 
       - name: Start JSON Server
-        run: json-server --watch public/db.json --port 5000
+        run: json-server --watch db.json --port 5000
