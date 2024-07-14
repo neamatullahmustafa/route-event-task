@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { fetchData ,getDataBase } from './api';
+import { fetchData  } from './api';
 import 'tailwindcss/tailwind.css';
 import Chart from 'chart.js/auto';
 import { CategoryScale } from 'chart.js';
@@ -19,8 +19,7 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       const data = await
-      //  fetchData();
-      getDataBase();
+       fetchData();
       setCustomers(data.customers);
       setTransactions(data.transactions);
       setTransactionsAmount(data.transactions);
